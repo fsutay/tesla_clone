@@ -92,18 +92,18 @@ a {
 
 }
 
-.navbar .orta-menu ul {
+.navbar .navbar-menu ul {
     display: flex;
     list-style-type: none;
     gap: 10px;
 }
 
-.navbar .orta-menu ul li {
+.navbar .navbar-menu ul li {
     padding: 6px 13px;
     border-radius: 5px;
 }
 
-.navbar .son-menu ul {
+.navbar .navbar-right-menu ul {
     display: flex;
     margin-right: 30px;
     gap: 20px;
@@ -112,14 +112,14 @@ a {
     justify-content: center;
 }
 
-.navbar .son-menu ul li {
+.navbar .navbar-right-menu ul li {
     position: relative;
     top: 2px;
     padding: 6px 13px;
     border-radius: 5px;
 }
 
-.son-menu ul label {
+.navbar-right-menu ul label {
     margin-top: 4px;
     padding: 6px 13px;
     cursor: pointer;
@@ -146,7 +146,7 @@ input[type="checkbox"] {
 
 }
 
-.close-btn:checked~.content div.btn-gruop {
+.close-btn:checked~.content div.btn-group {
     top: 85%;
     z-index: -999;
     backdrop-filter: blur(5px);
@@ -174,8 +174,8 @@ input[type="checkbox"] {
 
 }
 
-.buyuk-ekran,
-.kucuk-ekran {
+.desktop-sidebar,
+.mobile-sidebar {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -187,45 +187,45 @@ input[type="checkbox"] {
 
 }
 
-.son-menu label:hover,
-.orta-menu li:hover,
-.son-menu li:hover {
+.navbar-right-menu label:hover,
+.navbar-menu li:hover,
+.navbar-right-menu li:hover {
     transition: ease-in .5s;
     background-color: rgb(136, 215, 241);
 
 
 }
 
-.buyuk-ekran li,
-.kucuk-ekran li {
+.desktop-sidebar li,
+.mobile-sidebar li {
     margin-left: 40px;
     padding-right: 7rem;
     padding-left: 5px;
     border-radius: 3px;
 }
 
-.buyuk-ekran i,
-.kucuk-ekran i {
+.desktop-sidebar i,
+.mobile-sidebar i {
     margin-right: 10px;
 }
 
-.buyuk-ekran li:last-child,
-.kucuk-ekran li:last-child {
+.desktop-sidebar li:last-child,
+.mobile-sidebar li:last-child {
     font-size: 0.8rem;
     margin-top: -10px;
     padding-left: 30px;
 }
 
 
-.buyuk-ekran li:hover,
-.kucuk-ekran li:hover {
+.desktop-sidebar li:hover,
+.mobile-sidebar li:hover {
     transition: ease-in .4s;
     background-color: rgb(241, 241, 241);
 }
 
 
 @media screen and (min-width:1200px) {
-    .kucuk-ekran {
+    .mobile-sidebar {
         display: none;
 
     }
@@ -233,15 +233,15 @@ input[type="checkbox"] {
 }
 
 @media screen and (max-width:1200px) {
-    .buyuk-ekran {
+    .desktop-sidebar {
         display: none;
     }
 
-    .orta-menu {
+    .navbar-menu {
         display: none;
     }
 
-    .son-menu li:first-child {
+    .navbar-right-menu li:first-child {
         display: none;
     }
 
@@ -251,13 +251,13 @@ input[type="checkbox"] {
 
     }
 
-    .son-menu label {
+    .navbar-right-menu label {
         background-color: rgb(136, 215, 241);
     }
 
 }
 
-.btn-gruop {
+.btn-group {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -268,7 +268,7 @@ input[type="checkbox"] {
 
 }
 
-.btn-gruop button:first-child {
+.btn-group button:first-child {
     padding: 10px 90px;
     background-color: rgba(23, 26, 32, 0.75);
     color: white;
@@ -278,7 +278,7 @@ input[type="checkbox"] {
     border: 0;
 }
 
-.btn-gruop button:last-child {
+.btn-group button:last-child {
     padding: 10px 98px;
     background-color: rgba(244, 244, 244, 0.65);
     color: black;
@@ -289,28 +289,28 @@ input[type="checkbox"] {
 }
 
 @media screen and (max-width:840px) {
-    .btn-gruop button:last-child {
+    .btn-group button:last-child {
         padding: 11px 50px;
     }
 
-    .btn-gruop button:first-child {
+    .btn-group button:first-child {
         padding: 11px 30px;
     }
 }
 
 @media screen and (max-width:705px) {
-    .btn-gruop button:first-child {
+    .btn-group button:first-child {
         padding: 10px 90px;
     }
 
-    .btn-gruop button:last-child {
+    .btn-group button:last-child {
         padding: 10px 98px;
     }
 
 }
 
 @media screen and (max-width:599px) {
-    .btn-gruop {
+    .btn-group {
         flex-direction: column;
         top:75%;
         width: 100%;position: fixed;
@@ -319,12 +319,12 @@ input[type="checkbox"] {
 
     }
 
-    .btn-gruop button:first-child {
+    .btn-group button:first-child {
         width: 90%;
 
     }
 
-    .btn-gruop button:last-child {
+    .btn-group button:last-child {
         width: 90%;
     }
 
@@ -340,14 +340,14 @@ input[type="checkbox"] {
         background-image: url("img/mobil4.webp");
     }
   
-    .footer1 ul{
+    .mobile-footer ul{
      padding: 20px;  
     } 
-    .footer1 ul{
+    .mobile-footer ul{
         flex-direction: column;
        
     }
-    .footer1 ul li:nth-child(3),.footer1 ul li:nth-child(5){
+    .mobile-footer ul li:nth-child(3),.mobile-footer ul li:nth-child(5){
         display: none;
     }
 
@@ -381,7 +381,7 @@ input[type="checkbox"] {
 }
 
 .footer ul,
-.footer1 ul {
+.mobile-footer ul {
     font-family: GothamSSm;
     font-size: 12px;
     list-style-type: none;
@@ -390,7 +390,7 @@ input[type="checkbox"] {
 }
 
 .footer ul a,
-.footer1 a {
+.mobile-footer a {
     color: white;
 }
 
@@ -402,23 +402,23 @@ input[type="checkbox"] {
 }
 
  @media screen and (min-width:900px) {
-    .footer1{
+    .mobile-footer{
         display: none;
        
     }
    
 }
 
-.footer1{
+.mobile-footer{
 
     background-color: black;
 }
-.footer1 div{
+.mobile-footer div{
     position: sticky;
     bottom: 0;
 
 }
-.footer1 ul{
+.mobile-footer ul{
     display: flex;
     gap: 10px;
     padding:20px;
@@ -426,7 +426,7 @@ input[type="checkbox"] {
     justify-content: center;
 } 
 @media screen and (max-width:375px){
-    .btn-gruop{
+    .btn-group{
         bottom: 150px;
     }
 }
