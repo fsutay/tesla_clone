@@ -17,31 +17,22 @@ div {
 }
 
 .img1 {
-    background-image: url("./img/Homepage-Model-Y-Global-Desktop.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    background-image: url("../img/Homepage-Model-Y-Global-Desktop.webp");
 }
 
 .img2 {
-    background-image: url("./img/Homepage-Model-3-Desktop-LHD.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    background-image: url("../img/Homepage-Model-3-Desktop-LHD.webp");
 }
 
 .img3 {
-    background-image: url("./img/Model-S-homepage-desktop.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    background-image: url("../img/Model-S-homepage-desktop.jpeg");
 }
 
 .img4 {
-    background-image: url("./img/Homepage-Model-X-Desktop-LHD.webp");
+    background-image: url("../img/Homepage-Model-X-Desktop-LHD.webp");
+}
+
+.bg-image{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -308,15 +299,15 @@ input[type="checkbox"] {
     }
 
     .img2 {
-        background-image: url("img/mobil2.webp");
+        background-image: url("../img/mobil2.webp");
     }
 
     .img3 {
-        background-image: url("img/mobil3.jpeg");
+        background-image: url("../img/mobil3.jpeg");
     }
 
     .img4 {
-        background-image: url("img/mobil4.webp");
+        background-image: url("../img/mobil4.webp");
     }
   
     .mobile-footer ul{
